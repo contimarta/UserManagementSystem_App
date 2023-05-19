@@ -60,7 +60,12 @@ func getUserById(w http.ResponseWriter, r *http.Request){
 func createUser (w http.ResponseWriter, r *http.Request){
 	w.Header().Set("Content-Type", "application/json")
 	var user User
-	_ = json.NewDecoder(r.Body).Decode(&user)
+	err := json.NewDecoder(r.Body).Decode(&user)
+	if err != nil {
+		// Handle the error and return an appropriate response
+		http.Error(w, "Invalid request payload", http.StatusBadRequest)
+		return
+	}
 	user.ID= strconv.Itoa(rand.Intn(100000))
 	users = append(users, user)
 	json.NewEncoder(w).Encode(user)
@@ -73,10 +78,23 @@ func updateUser(w http.ResponseWriter, r *http.Request){
 	for index, item := range users {
 		if item.ID==params["id"] {
 			users= append(users[:index],users[index+1:]...)
-			break
+			var user User
+			err := json.NewDecoder(r.Body).Decode(&user)
+			if err != nil {
+				// Handle the error and return an appropriate response
+				http.Error(w, "Invalid request payload", http.StatusBadRequest)
+				return
+			}
+			user.ID= strconv.Itoa(rand.Intn(100000))
+			users = append(users, user)
+			json.NewEncoder(w).Encode(user)
+			return
+
+
 		}
 	}
 }
+
 
 func main() {
 	users = append(users, User{ID:"1", FirstName:"Alice", Surname:"Smith", Email: "ada@gmail.com", Birthdate: "20/01/1990"})
