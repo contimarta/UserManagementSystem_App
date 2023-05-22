@@ -1,30 +1,16 @@
 [
  {
-  "id": "3",
-  "firstName": "Juana",
-  "surname": "Flor",
-  "email": "juana@gmail.com",
-  "birthdate": "10/02/1960"
+  "id": "1",
+  "firstName": "Joan",
+  "surname": "Doe",
+  "email": "johndoe@example.com",
+  "birthdate": "1980-01-01"
  },
  {
-  "id": "4",
-  "firstName": "Emily",
-  "surname": "Brown",
-  "email": "emilybrown@example.com",
-  "birthdate": "1988-12-25"
- },
- {
-  "id": "5",
-  "firstName": "Daniel",
-  "surname": "Wilson",
-  "email": "danielwilson@example.com",
-  "birthdate": "1992-03-18"
- },
- {
-  "id": "937",
-  "firstName": "Juan",
-  "surname": "Flores",
-  "email": "juan@gmail.com",
-  "birthdate": "14/02/1960"
+  "id": "8",
+  "firstName": "Frank",
+  "surname": "Franklin",
+  "email": "frankfranklin@example.com",
+  "birthdate": "1994-08-08"
  }
 ]

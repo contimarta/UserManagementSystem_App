@@ -13,11 +13,16 @@ func main() {
 
 	r := mux.NewRouter()
 	routes.SetRouter(r)
+	corsHandler := cors.New(cors.Options{
+		AllowedOrigins: []string{"*"}, // allow requests from this origin
+		AllowCredentials: true, // allow credentials
+		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE"}, // allow these HTTP methods
+		AllowedHeaders: []string{"*"}, // allow all headers
+	})
 
-
-	fmt.Println("Server listening on port 3000")
+	fmt.Println("Server listening on port 8000")
 	log.Panic(
-		http.ListenAndServe(":3000", cors.Default().Handler(r)),
+		http.ListenAndServe(":8000", corsHandler.Handler(r)),
 	)
 }
 

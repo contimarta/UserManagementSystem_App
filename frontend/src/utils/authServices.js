@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = `localhost:3000/auth/`;
+const URL = `http://localhost:8000/auth/`;
 
 export const signUp = async (formData) => {
 	try {
@@ -14,6 +14,7 @@ export const signUp = async (formData) => {
 
 export const logIn = async (formData) => {
 	try {
+		console.log(formData);
 		const response = await axios.post(URL + 'signin', formData);
 		return response.data;
 	} catch (e) {

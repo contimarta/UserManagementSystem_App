@@ -3,7 +3,6 @@ import { signUp } from '../../utils/authServices';
 
 const Signup = () => {
 	const [signUpFormData, setSignUpFormData] = useState({
-		username: '',
 		email: '',
 		password: '',
 	});

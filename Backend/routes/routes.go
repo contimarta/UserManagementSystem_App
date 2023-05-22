@@ -11,7 +11,7 @@ router.HandleFunc("/users/{id}", controllers.GetUserById).Methods("GET")
 router.HandleFunc("/users", controllers.CreateUser).Methods("POST")
 router.HandleFunc("/users/{id}", controllers.UpdateUser).Methods("PUT")
 router.HandleFunc("/users/{id}", controllers.DeleteUser).Methods("DELETE")
-router.HandleFunc("/signin", controllers.SignIn).Methods("POST")
-router.HandleFunc("/signup", controllers.SignUp).Methods("POST")
+router.HandleFunc("/auth/signin", controllers.SignIn).Methods("POST")
+router.HandleFunc("/auth/signup", controllers.SignUp).Methods("POST")
 
 }

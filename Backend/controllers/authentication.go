@@ -1,12 +1,11 @@
 package controllers
 
 import (
-	"net/http"
 	"encoding/json"
+	"net/http"
 	"github.com/contimarta/UserManagementSystem_App/Backend/models"
 	"github.com/contimarta/UserManagementSystem_App/Backend/utils"
 	"golang.org/x/crypto/bcrypt"
-
 )
 
 
