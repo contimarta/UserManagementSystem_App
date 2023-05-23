@@ -20,5 +20,12 @@ export const updateUser = async (id, newData) =>{
     return response.data;}
 catch(error){return {error:error.message}}
 
+}
+
+export const newUser = async (newData) =>{
+    try{const response = await axios.post(`http://localhost:8000/users`, newData);
+    
+    return response.data;}
+catch(error){return {error:error.message}}
 
 }

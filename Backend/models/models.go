@@ -5,6 +5,7 @@ type User struct {
 	Surname   string `json:"surname"`
 	Email     string `json:"email"`
 	Birthdate string `json:"birthdate"`
+	File      string `json:"file"`
 }
 
 type Auth struct {

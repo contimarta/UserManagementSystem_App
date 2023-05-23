@@ -14,7 +14,7 @@ const Signup = () => {
 		e.preventDefault();
 		try {
 			await signUp(signUpFormData);
-			alert("You've successfully signed up!");
+			alert("You've successfully signed up! You can now log in.");
 		} catch (err) {
 			return { error: err.message };
 		}
@@ -23,7 +23,7 @@ const Signup = () => {
 	return (
 		<>
 			<div className="login-form">
-				<h3>Sign Up</h3>
+				<h4 className="text-center">Create a new account:</h4>
 				<form onSubmit={signupSubmitHandler}>
 
 					<div className="form-group">
@@ -38,8 +38,8 @@ const Signup = () => {
 						<input type="password" name="password" id="password" placeholder="Enter a password" onChange={signupChangeHandler} className="form-control" />
 					</div>
 
-					<button type="submit" className="btn btn-primary">
-						Sign Up
+					<button type="submit" className="btn btn-primary mt-3">
+						SIGN UP
 					</button>
 				</form>
 			</div>

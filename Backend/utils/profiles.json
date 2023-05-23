@@ -18,5 +18,9 @@
  {
   "email": "p@p",
   "password": "$2a$10$D8fJS0C4X.jJxiZdVMz6XOKk5sZ1tO1OezVNHjjoXto8pcP7ASpC."
+ },
+ {
+  "email": "",
+  "password": "$2a$10$HwO29BQQ6N2duS/dW7/MCuYnvxqWNnh8gI3Slkhj5sHULgdaeOBkq"
  }
 ]

@@ -1,16 +1,58 @@
 [
  {
   "id": "1",
-  "firstName": "Joan",
+  "firstName": "John",
   "surname": "Doe",
   "email": "johndoe@example.com",
-  "birthdate": "1980-01-01"
+  "birthdate": "1980-01-01",
+  "file": ""
+ },
+ {
+  "id": "2",
+  "firstName": "Jane",
+  "surname": "Doe",
+  "email": "janedoe@example.com",
+  "birthdate": "1982-02-02",
+  "file": ""
+ },
+ {
+  "id": "6",
+  "firstName": "David",
+  "surname": "Davis",
+  "email": "daviddavis@example.com",
+  "birthdate": "1990-06-06",
+  "file": ""
+ },
+ {
+  "id": "7",
+  "firstName": "Emily",
+  "surname": "Evans",
+  "email": "emilyevans@example.com",
+  "birthdate": "1992-07-07",
+  "file": "contracts/fictional_contract.pdf"
  },
  {
   "id": "8",
   "firstName": "Frank",
   "surname": "Franklin",
   "email": "frankfranklin@example.com",
-  "birthdate": "1994-08-08"
+  "birthdate": "1994-08-08",
+  "file": ""
+ },
+ {
+  "id": "9",
+  "firstName": "Grace",
+  "surname": "Green",
+  "email": "gracegreen@example.com",
+  "birthdate": "1996-09-09",
+  "file": ""
+ },
+ {
+  "id": "573",
+  "firstName": "Marta",
+  "surname": "Conti Lorenzo",
+  "email": "marta.conti.lorenzo@gmail.com",
+  "birthdate": "1988-01-01",
+  "file": ""
  }
 ]
