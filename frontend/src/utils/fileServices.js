@@ -1,4 +1,5 @@
 import axios from "axios";
+axios.defaults.withCredentials = true;
 
 export const uploadContract = async (file, id) => {
 	const formData = new FormData();

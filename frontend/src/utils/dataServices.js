@@ -1,4 +1,5 @@
 import axios from "axios";
+axios.defaults.withCredentials = true;
 
 export const getUsers = async () => {
     try{const response = await axios.get(`http://localhost:8000/users`);
@@ -15,7 +16,7 @@ export const deleteUser = async (id) => {
 }
 
 export const updateUser = async (id, newData) =>{
-    try{const response = await axios.put(`http://localhost:8000/users/${id}`, newData);
+    try{const response = await axios.put(`http://localhost:8000/users/${id}`, newData,{ withCredentials: true });
     
     return response.data;}
 catch(error){return {error:error.message}}

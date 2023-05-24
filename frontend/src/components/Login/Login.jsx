@@ -20,11 +20,9 @@ const Login = () => {
 	const logInSubmitHandler = async (e) => {
 		e.preventDefault();
 		try {
-			let response = await logIn(logInFormData);
-			console.log(response);
-			if (response.message === "Login successful") {
-				navigate("/main");
-			}
+			const response = await logIn(logInFormData);
+			document.cookie = `token=${response.token}; path=/`;
+			navigate("/main");
 		} catch (err) {
 			return { error: err.message };
 		}

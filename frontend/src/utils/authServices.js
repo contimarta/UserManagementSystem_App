@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const URL = `http://localhost:8000/auth/`;
+axios.defaults.withCredentials = true;
 
 export const signUp = async (formData) => {
 	try {

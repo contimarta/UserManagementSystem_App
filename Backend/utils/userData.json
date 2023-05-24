@@ -1,13 +1,5 @@
 [
  {
-  "id": "1",
-  "firstName": "John",
-  "surname": "Doe",
-  "email": "johndoe@example.com",
-  "birthdate": "1980-01-01",
-  "file": ""
- },
- {
   "id": "2",
   "firstName": "Jane",
   "surname": "Doe",
@@ -17,10 +9,10 @@
  },
  {
   "id": "6",
-  "firstName": "David",
-  "surname": "Davis",
-  "email": "daviddavis@example.com",
-  "birthdate": "1990-06-06",
+  "firstName": "D",
+  "surname": "Davisf",
+  "email": "daviddavis@ex.com",
+  "birthdate": "1990-06-09",
   "file": ""
  },
  {
