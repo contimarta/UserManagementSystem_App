@@ -32,7 +32,7 @@ following features:
     go get github.com/gorilla/mux
     go get github.com/rs/cors
     go get github.com/golang-jwt/jwt/v4
-    got get golang.org/x/crypto
+    go get golang.org/x/crypto
     ```
 
 3. **Build the Server**
