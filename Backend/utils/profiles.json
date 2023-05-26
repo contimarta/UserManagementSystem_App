@@ -1,30 +1,10 @@
 [
  {
-  "email": "test",
-  "password": "test"
- },
- {
-  "email": "3",
-  "password": "$2a$10$Tr7ggQZ52MgDBfr5Yv1b9OFMX5aiOMtSnuvv34.uIHMdPrNLdwX1i"
- },
- {
   "email": "Marta@marta.com",
   "password": "$2a$10$X0u.UruDT/mU8664E4wRiOFk8o.PIapC7dctDROV0teVHcGqSpkKq"
  },
  {
   "email": "test@test.com",
-  "password": "$2a$10$UskeO0q4FSR8Hqe5fy.JK.phL/xcaMd0i1MPtl3o2qGUX5ku6HRdy"
- },
- {
-  "email": "p@p",
-  "password": "$2a$10$D8fJS0C4X.jJxiZdVMz6XOKk5sZ1tO1OezVNHjjoXto8pcP7ASpC."
- },
- {
-  "email": "",
-  "password": "$2a$10$HwO29BQQ6N2duS/dW7/MCuYnvxqWNnh8gI3Slkhj5sHULgdaeOBkq"
- },
- {
-  "email": "",
-  "password": "$2a$10$d5qAlTuePUfWFHxS6P79Rub13SPZA4qye.DxRfkCfa5QK2OVfv7Oa"
+  "password": "$2a$10$Ci8ZQt.ILwq24qiIidG1Bu4DFUORLdn4oAvrV9P2gqawJ0ZW6jao6"
  }
 ]

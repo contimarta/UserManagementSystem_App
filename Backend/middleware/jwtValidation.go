@@ -34,7 +34,6 @@ func Middleware(next http.Handler) http.Handler {
 		if (!token.Valid){
 			http.Error(w, "Unauthorized", http.StatusUnauthorized)
 		}
-		
 		next.ServeHTTP(w, r)
 	})
 }
