@@ -4,6 +4,8 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+
+//Modal that pops up when user clicks on edit button
 const EditModal = ({ userRow, uploadUsers, modalIsOpen, setModalIsOpen }) => {
 	const { id, email, firstName, surname, birthdate } = userRow;
 

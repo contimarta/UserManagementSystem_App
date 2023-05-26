@@ -4,6 +4,8 @@ import(
 	"github.com/golang-jwt/jwt/v4"
 )
 
+//Here are the types that are used in this app
+
 type User struct {
 	ID        string `json:"id"`
 	FirstName string `json:"firstName"`

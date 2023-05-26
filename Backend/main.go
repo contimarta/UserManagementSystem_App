@@ -9,6 +9,8 @@ import (
 	"github.com/contimarta/UserManagementSystem_App/Backend/routes"
 )
 
+//Here you can find the server and the initialisation of the routes using gorilla/mux package. Cors are allowed but
+//only from localhost:3000.
 func main() {
 
 	r := mux.NewRouter()

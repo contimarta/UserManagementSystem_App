@@ -1,4 +1,8 @@
 import axios from "axios";
+
+//Here you can find the functions that handle upload of users data, and edit/delete user data, as well
+//as the creating a new user.
+//Axios default credentials are set to true so that the cookie stored in the browser is send with each request.
 axios.defaults.withCredentials = true;
 
 export const getUsers = async () => {

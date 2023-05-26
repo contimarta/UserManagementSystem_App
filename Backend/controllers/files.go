@@ -39,6 +39,8 @@ func saveUser(updatedUser models.User) error {
 	return fmt.Errorf("user with ID %s not found", updatedUser.ID)
 }
 
+//Handler functions to upload and download contracts.
+
 func UploadContractHandler(w http.ResponseWriter, r *http.Request) {
 	id := mux.Vars(r)["id"]
 

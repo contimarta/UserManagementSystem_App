@@ -6,6 +6,7 @@ import(
 	"log"
 )
 
+//Implementation of the functions used to read and write data in the JSON files that are used as mock DBs.
 func ReadData() ([]models.User){
 	file, err := os.ReadFile("utils/userData.json")
 	if err != nil {
@@ -21,9 +22,6 @@ func ReadData() ([]models.User){
 
 	return users
 }
-
-
-
 
 func WriteData(users []models.User){
 	file, _ := json.MarshalIndent(users, "", " ")

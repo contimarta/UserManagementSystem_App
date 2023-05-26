@@ -2,41 +2,16 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main/Main.jsx";
 import Login from "./components/Login/Login.jsx";
-import { useEffect, useState } from "react";
-import { getUsers } from "./utils/dataServices";
 
+//In the app there are two routes: the landing page, Login, asks the user to enter her
+//credentials or create an account. Once logged in the user is redirected to Main, where
+//she will have access to the User Management System.
 function App() {
-	const [users, setUsers] = useState([]);
-	const [error, setError] = useState({});
-
-	//Function that uploads the users, or an error if there is a problem with the request
-	const uploadUsers = async () => {
-		const data = await getUsers();
-
-		if (!data?.error) {
-			setUsers(data);
-			setError({});
-		}
-		if (data?.error) {
-			setError(data);
-			setUsers([]);
-		}
-	};
-	//Hook that builds the app the first time it is rendered
-	useEffect(() => {
-		uploadUsers();
-	}, []);
-
 	return (
 		<div className="App">
 			<Router>
 				<Routes>
-					{Object.keys(error).length === 0 && (
-						<Route
-							path="/main"
-							element={<Main users={users} uploadUsers={uploadUsers} />}
-						/>
-					)}
+					<Route path="/main" element={<Main />} />
 					<Route path="/" element={<Login />} />
 				</Routes>
 			</Router>

@@ -1,5 +1,6 @@
 import UserRow from "./UserRow/UserRow";
 
+//Table component where user info is displayed as well as buttons to edit/delete/upload/download
 const UsersTable = ({ users, uploadUsers }) => {
 	const usersList = users.map((userRow, index) => (
 		<UserRow key={index} userRow={userRow} uploadUsers={uploadUsers} />
@@ -21,7 +22,7 @@ const UsersTable = ({ users, uploadUsers }) => {
 					</tr>
 				</thead>
 				<tbody>
-					{/* Create a set of table rows for each user in the users array */}
+					{/* Creates a set of table rows for each user in the users array */}
 					{usersList}
 				</tbody>
 			</table>

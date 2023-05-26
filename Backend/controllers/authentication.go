@@ -32,7 +32,7 @@ func SignUp(w http.ResponseWriter, r *http.Request){
 
 
 // define a key used to create the signature
-var jwtKey = []byte("your_secret_key")
+var jwtKey = []byte(`my_secret_key`)
 
 func SignIn(w http.ResponseWriter, r *http.Request) {
 
@@ -61,12 +61,11 @@ func SignIn(w http.ResponseWriter, r *http.Request) {
 				claims := &models.Claims{
 					Email: profile.Email,
 					RegisteredClaims: jwt.RegisteredClaims{
-						// In JWT, the expiry time is expressed as unix milliseconds
 						ExpiresAt: jwt.NewNumericDate(expirationTime),
 					},
 				}
 
-				// Declare the token with the algorithm used for signing, and the claims
+				// Declare the token with the signing algorithm and encode the claims
 				token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 
 				// Create the JWT string

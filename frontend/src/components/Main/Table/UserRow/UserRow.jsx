@@ -9,6 +9,11 @@ import {
 } from "../../../../utils/fileServices";
 import { Modal } from "react-bootstrap";
 
+//Row component of the Table, in this component you will find data and the buttons for editing/deleting/
+//uploading and downloading data, although the implementations of these functions are in the dataServices file
+//in the utils folder. The editing button triggers a modal that is implemented in EditModal component.
+//Button icons obtained from https://react-icons.github.io/react-icons/icons?name=md
+
 const UserRow = ({ userRow, uploadUsers }) => {
 	const { id, email, firstName, surname, birthdate } = userRow;
 	const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -43,6 +48,7 @@ const UserRow = ({ userRow, uploadUsers }) => {
 		try {
 			await downloadContract(id);
 		} catch (error) {
+			alert("Not possible to download file");
 			console.error(error);
 		}
 	};
@@ -76,17 +82,19 @@ const UserRow = ({ userRow, uploadUsers }) => {
 					)}
 				</td>
 				<td>
-					<button
-						type="button"
-						className="btn btn-primary me-md-2"
-						onClick={() => setModalIsOpen(true)}
-					>
-						<MdModeEdit />
-					</button>
+					<div className="d-flex gap-2">
+						<button
+							type="button"
+							className="btn btn-primary"
+							onClick={() => setModalIsOpen(true)}
+						>
+							<MdModeEdit />
+						</button>
 
-					<button className="btn btn-danger" onClick={() => handleDelete(id)}>
-						<MdDeleteOutline />
-					</button>
+						<button className="btn btn-danger" onClick={() => handleDelete(id)}>
+							<MdDeleteOutline />
+						</button>
+					</div>
 				</td>
 				<EditModal
 					userRow={userRow}

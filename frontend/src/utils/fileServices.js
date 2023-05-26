@@ -1,6 +1,10 @@
 import axios from "axios";
 axios.defaults.withCredentials = true;
 
+//Functions that handle file upload and download. 
+//Resources used: https://rapidapi.com/guides/upload-files-react-axios
+//https://gist.github.com/javilobo8/097c30a233786be52070986d8cdb1743
+
 export const uploadContract = async (file, id) => {
 	const formData = new FormData();
 	formData.append("contract", file); // Here is where the file is added to the form
@@ -27,17 +31,17 @@ export const downloadContract = async (userId) => {
 		const response = await axios({
 			url: `http://localhost:8000/users/${userId}/download`,
 			method: "GET",
-			responseType: "blob", // Important
+			responseType: "blob", 
 		});
 
-		// Create a link element with an URL to the file and click on it to download
+		// Creates a link element with an URL to the file and click on it to download
 		const url = window.URL.createObjectURL(new Blob([response.data]));
 		const link = document.createElement("a");
 		link.href = url;
 		link.download = `contract_${userId}.pdf`;
 		document.body.appendChild(link);
 		link.click();
-		setTimeout(() => link.remove(), 0); // remove the link after triggering the download
+		setTimeout(() => link.remove(), 0); // removes the link after triggering the download
 	} catch (error) {
 		console.error(error);
 	}

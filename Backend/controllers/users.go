@@ -12,7 +12,7 @@ import (
 
 )
 
-
+//Handler functions to edit, delete, and get users data from the mock DB userData.json.
 func GetUsers(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	users := utils.ReadData()

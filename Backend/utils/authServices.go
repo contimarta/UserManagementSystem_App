@@ -6,6 +6,8 @@ import(
 	"log"
 )
 
+//Implementations of the auth functions that create a new profile and read all the existing profiles from the JSON file profiles.JSON
+//that is used as a mock DB.
 
 func CreateProfile(profiles []models.Auth){
 	file, _ := json.MarshalIndent(profiles, "", " ")

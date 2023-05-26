@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { signUp } from '../../utils/authServices';
 
+//Component that signs up a new user
 const Signup = () => {
 	const [signUpFormData, setSignUpFormData] = useState({
 		email: '',
@@ -22,8 +23,8 @@ const Signup = () => {
 
 	return (
 		<>
-			<div className="login-form">
-				<h4 className="text-center">Create a new account:</h4>
+			<div className=" mt-1">
+				<p >Create a new account:</p>
 				<form onSubmit={signupSubmitHandler}>
 
 					<div className="form-group">
