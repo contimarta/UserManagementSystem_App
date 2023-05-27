@@ -8,7 +8,7 @@ import (
 )
 
 //Middleware function that checks whether the request has a token and validates it before calling the
-//handler function.
+//handler function. Resource: https://hackernoon.com/creating-a-middleware-in-golang-for-jwt-based-authentication-cx3f32z8
 
 func Middleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
