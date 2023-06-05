@@ -1,5 +1,17 @@
 # User Management System Guide
 
+## App Screenshots:
+1. Log in page:
+<img width="701" alt="Screenshot 2023-06-05 at 11 11 20" src="https://github.com/contimarta/UserManagementSystem_App/assets/120254646/d7907ea8-c5a8-44ad-8989-1ef9182a244f">
+2. Sign up page:
+<img width="564" alt="Screenshot 2023-06-05 at 11 11 32" src="https://github.com/contimarta/UserManagementSystem_App/assets/120254646/11d50a0b-6226-4aa6-9512-059a756f7ea8">
+3. User Management System
+<img width="881" alt="Screenshot 2023-06-05 at 11 25 12" src="https://github.com/contimarta/UserManagementSystem_App/assets/120254646/671d40ea-035d-476f-96c2-ccca6673f4d2">
+4. Edit User Modal
+<img width="913" alt="Screenshot 2023-06-05 at 11 25 24" src="https://github.com/contimarta/UserManagementSystem_App/assets/120254646/1f1592b0-5369-4c00-864e-88d57a887878">
+
+
+
 ## What does it do?
 
 ### Backend Development
